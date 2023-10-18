@@ -3,8 +3,6 @@
 #include <iostream>
 #include <vector>
 
-#pragma comment(lib, "crypt32.lib")
-
 int wmain(int argc, wchar_t* argv[])
 {
 	HCERTSTORE hCertStore = CertOpenSystemStore(NULL, argc > 1 ? argv[1] : L"root");
